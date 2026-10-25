@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #F8FAFC;
+    --fg: #0F172A;
+  }
+  .dark {
+    --bg: #0F172A;
+    --fg: #F8FAFC;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    transition: background-color 0.2s, color 0.2s;
+  }
+}
